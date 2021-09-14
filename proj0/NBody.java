@@ -13,7 +13,7 @@ public class NBody{
   public static Planet[] readPlanets(String Filename){
     In in = new In(Filename);
     int N = in.readInt();
-    Planet[] pArray = new Planet[N];
+    Planet[] pArr = new Planet[N];
     double radius = in.readDouble();
     int i = 0;
     while (i < N){
@@ -23,7 +23,7 @@ public class NBody{
       double yV = in.readDouble();
       double mass = in.readDouble();
       String img = in.readString();
-      pArray[i] = new Planet(xP, yP, xV, yV, mass, img);
+      pArr[i] = new Planet(xP, yP, xV, yV, mass, img);
       i++;
     }
     return pArray;
