@@ -26,7 +26,7 @@ public class NBody{
       pArr[i] = new Planet(xP, yP, xV, yV, mass, img);
       i++;
     }
-    return pArray;
+    return pArr;
   }
 
   public static void main(String[] args){
